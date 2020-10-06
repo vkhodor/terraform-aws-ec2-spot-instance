@@ -31,7 +31,7 @@ resource "aws_spot_instance_request" "this" {
   placement_group                      = "${var.placement_group}"
   tenancy                              = "${var.tenancy}"
 
-  spot_price                      = "${var.spot_price}"
+//  spot_price                      = "${var.spot_price}"
   wait_for_fulfillment            = "${var.wait_for_fulfillment}"
   spot_type                       = "${var.spot_type}"
   instance_interruption_behaviour = "${var.instance_interruption_behaviour}"

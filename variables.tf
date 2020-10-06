@@ -129,12 +129,13 @@ variable "network_interface" {
   description = "Customize network interfaces to be attached at instance boot time"
   default     = []
 }
-
+/*
 variable "spot_price" {
   type        = "string"
   description = "The maximum hourly price (bid) you are willing to pay for the instance, e.g. 0.10"
-}
 
+}
+*/
 variable "wait_for_fulfillment" {
   description = "(Optional; Default: false) If set, Terraform will wait for the Spot Request to be fulfilled, and will throw an error if the timeout of 10m is reached."
   default     = false
