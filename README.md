@@ -15,7 +15,7 @@ module "ec2_spot_cluster" {
   source = "johnypony3/ec2-spot-instance/aws"
 
   name  = "my-cluster"
-  count = 5
+  instances_count = 5
 
   ami                    = "ami-ebd02392"
   instance_type          = "t2.micro"
